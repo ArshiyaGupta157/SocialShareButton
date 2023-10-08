@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <!-- google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-    <!---------------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Share Buttons</title>
@@ -25,16 +25,20 @@
         }
 
         .overlay {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.048);
             /* Add an overlay for better readability */
-            height: 100%;
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin-top: 10vh;
         }
 
         .container {
+            width: 90%;
             max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgb(255, 255, 255);
             /* Semi-transparent white background for content */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -59,34 +63,68 @@
 
         .social-share {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
-
+            justify-content: center;
         }
 
-        .social-share a {
+        .social-share  a {
             text-decoration: none;
-            color: #fff;
-            background-color: #0077B5;
-            padding: 10px 15px;
+            background-color: hsl(0, 0%, 100%);
+            /* color: #fff; */
+
+            /* background-color: #0077B5; */
+            padding-left: 3px;
+            padding-right: 5px;
             border-radius: 5px;
             display: flex;
             align-items: center;
             transition: background-color 0.3s ease;
-
         }
-
         .social-share a:hover {
-            background-color: #00548F;
+            background-color:rgba(218, 191, 191, 0.699);
+            color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border:2px solid grey ;
         }
 
         .social-share i {
             margin-right: 5px;
         }
 
-        body {
+        #li {
+            padding-right: 5px;
+        }
+
+        #share {
+            background-color: rgb(0, 89, 255);
+            color: white;
+            border-radius: 5px ;
+            padding: 5px;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: space-between;
+            height: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            flex-wrap: wrap;
+            
+        }
+
+        .share {
+            padding-right: 5px;
+        }
+        #share a{
+            margin-left: 10px;
+        }
+        .linkedin{
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+        .font{
+            font-size: large;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -106,21 +144,37 @@
             </div>
 
             <div class="social-share">
-                <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton&text=Social%20Share%20Button&hashtags=SocialShareButton"
-                    target="_blank">
-                    <i class="fab fa-twitter"></i> Share on Twitter
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&su=Social%20Share%20Button&body=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton"
-                    target="_blank">
-                    <i class="fab fa-instagram"></i> Share on GMAIL
-                </a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton" target="_blank" class="...">
-                    <i class="..."></i> LinkedIn
-                </a>
-                <a href="https://t.me/share/url?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton
-                " target="_blank" class="...">
-                    <i class="..."></i> TELEGRAM
-                </a>
+                <div id="share">
+                    <img class="share"
+                        src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBP_-SPqyhNpLoRe1Q0wtn5gbdr-_KhbJ5hsN0lbVTAKEPJCLRsGIEvuvQfPCjMyDLryMEDJNb1t9FTcN2GlFc4ue_SXw=w1304-h647"
+                        width="20" height="20"><i class="font">Share</i>
+
+                    <a class="twitter"
+                        href="https://twitter.com/intent/tweet?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton&text=Social%20Share%20Button&hashtags=SocialShareButton"
+                        target="_blank">
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBWhp5y4db8203D2A9ZBY4BgFiXWna0450gHx_aJ-B2PgRkJPqgMVGTeH1pyh4JNNCKerYzc0PLoS9A3LLo5ZHxeka4-A=w1304-h647"
+                            alt="X" width="30" height="20"> Twitter
+                    </a>
+                    <a class="gmail"
+                        href="https://mail.google.com/mail/?view=cm&su=Social%20Share%20Button&body=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton"
+                        target="_blank">
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAHxtDX_wQVaJ8EejBtCoF8lAM_m2TNRFYs_OZU0Sk2-u06pd2s1S4k1UxhDNF1S8nQZqMCYPm1n0cFGqWLMkHZtSjlEA=w1304-h647"
+                            alt="gmail" width="40" height="20"> Gmail
+                    </a>
+                    <a class="linkedin"
+                        href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton"
+                        target="_blank">
+                        <img id="li"
+                            src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaA5w3j1DnTXYLtzSNT2coAyODz4zFVNzp7uSKm4JK-km56EBOrWAao6tIACP8w9yUitqZxUAWOgev5Ra_tyxIqg_d99Xg=w1304-h647"
+                            width="20" height="20"> LinkedIn
+                    </a>
+                    <a class="telegram"
+                        href="https://t.me/share/url?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton"
+                        target="_blank">
+                        <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAJUB_H8Y7Xc9M9ziSZJQD_J9dlVDRd9owLY6zjwoPllet4TPX5HmVC80Xn7MpoPo55LjldI3PPgxCOTcPBjTbFBqngSA=w1304-h647"
+                            width="20" height="20"> TELEGRAM
+                    </a>
+                </div>
             </div>
         </div>
     </div>
