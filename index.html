@@ -15,7 +15,6 @@
     <title>Social Share Buttons</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('https://images.unsplash.com/photo-1692815016186-076a2eb9c9c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
@@ -26,7 +25,6 @@
 
         .overlay {
             background: rgba(0, 0, 0, 0.048);
-            /* Add an overlay for better readability */
             min-height: 90vh;
             display: flex;
             justify-content: center;
@@ -35,12 +33,9 @@
         }
 
         .container {
-            width: 90%;
-            max-width: 800px;
+            width: 800px;
             padding: 20px;
             background-color: rgb(255, 255, 255);
-            /* Semi-transparent white background for content */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .article {
@@ -51,7 +46,6 @@
             font-family: 'Young Serif', serif;
             font-size: 24px;
             color: #333;
-            margin-bottom: 10px;
         }
 
         .article p {
@@ -64,34 +58,27 @@
         .social-share {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
             justify-content: center;
         }
 
         .social-share  a {
             text-decoration: none;
-            background-color: hsl(0, 0%, 100%);
-            /* color: #fff; */
-
-            /* background-color: #0077B5; */
+            background-color: white;
             padding-left: 3px;
             padding-right: 5px;
             border-radius: 5px;
             display: flex;
             align-items: center;
-            transition: background-color 0.3s ease;
+            transition-duration: 0.5s
         }
         .social-share a:hover {
-            background-color:rgba(218, 191, 191, 0.699);
-            color: rgb(255, 255, 255);
+            background-color:rgb(176, 238, 238);
+            color: grey;
             padding-top: 10px;
             padding-bottom: 10px;
             border:2px solid grey ;
         }
 
-        .social-share i {
-            margin-right: 5px;
-        }
 
         #li {
             padding-right: 5px;
@@ -105,7 +92,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 40px;
+            height: 50px;
             padding-left: 20px;
             padding-right: 20px;
             flex-wrap: wrap;
@@ -119,8 +106,8 @@
             margin-left: 10px;
         }
         .linkedin{
-            padding-top: 1px;
-            padding-bottom: 1px;
+            padding-top: 3px;
+            padding-bottom: 3px;
         }
         .font{
             font-size: large;
@@ -136,7 +123,7 @@
                 <h1>Social Share Button</h1>
                 <p>A social share button is a feature on a website or app that allows users to easily share content,
                     such as articles, images, or videos, on their social media profiles or with their contacts. These
-                    buttons typically display icons of popular social media platforms like Facebook, Twitter, Instagram,
+                    buttons typically display icons of popular social media platforms like Linkedin, Twitter, Telegram
                     and others. When users click on these buttons, they can quickly post a link to the content on their
                     chosen social media platform, helping to increase the content's visibility and reach a wider
                     audience. Social share buttons are commonly used to promote content and encourage social sharing.
@@ -153,13 +140,13 @@
                         href="https://twitter.com/intent/tweet?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton&text=Social%20Share%20Button&hashtags=SocialShareButton"
                         target="_blank">
                         <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaBWhp5y4db8203D2A9ZBY4BgFiXWna0450gHx_aJ-B2PgRkJPqgMVGTeH1pyh4JNNCKerYzc0PLoS9A3LLo5ZHxeka4-A=w1304-h647"
-                            alt="X" width="30" height="20"> Twitter
+                         width="30" height="20"> Twitter
                     </a>
                     <a class="gmail"
                         href="https://mail.google.com/mail/?view=cm&su=Social%20Share%20Button&body=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton"
                         target="_blank">
                         <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAHxtDX_wQVaJ8EejBtCoF8lAM_m2TNRFYs_OZU0Sk2-u06pd2s1S4k1UxhDNF1S8nQZqMCYPm1n0cFGqWLMkHZtSjlEA=w1304-h647"
-                            alt="gmail" width="40" height="20"> Gmail
+                            width="40" height="20"> Gmail
                     </a>
                     <a class="linkedin"
                         href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Farshiyagupta157.github.io%2FSocialShareButton"
