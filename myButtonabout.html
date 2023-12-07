@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        body {
+            background-color: rgb(12, 9, 9);
+            height: 100%;
+            background-image: url(./background\ for\ log\ dark\ mode.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin:0;
+            padding:0;
+            overflow: hidden;
+        }
+
+        .abtdiv {
+            padding: 3%;
+            margin: 3%;
+            backdrop-filter: blur(20px);
+        }
+
+
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin: 0;
+            text-align: center;
+            text-align: justify;
+            color: white;
+            font-size: large;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #7ab8ff;
+            height: 10vh;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 10vw;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <div>
+            <img src="https://www.registerforshare.org/sites/registerforshar/images/shareLogo.png" width="60vw"
+                height="40vh">
+        </div>
+        <ul type="none">
+            <li><a href="./myButton6.html">Home</a></li>
+            <li><a href="./myButtonabout.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="abtdiv">
+        <p class="about">
+            Welcome to Social Share Button, your go-to destination for all things related to social sharing! We believe
+            in the power of connections and the impact of sharing ideas, experiences, and content across the digital
+            landscape.
+
+            At Social Share Button, our mission is to provide a platform where users can seamlessly engage with social
+            share buttons and discover valuable insights into the world of digital sharing. Whether you're a social
+            media enthusiast, a content creator, or someone looking to enhance your online presence, we've got you
+            covered.
+
+            Explore our collection of articles that delve into the dynamics of effective social sharing strategies, tips
+            for optimizing your online content, and the latest trends in the ever-evolving realm of digital
+            connectivity.
+
+            Join us on this journey to amplify your online reach, foster meaningful connections, and stay ahead in the
+            dynamic world of social sharing. Feel free to interact with our user-friendly social share buttons, and
+            don't forget to check out our informative articles for valuable insights.
+
+            Thank you for being a part of the Social Share Button community - where sharing is not just a button, but a
+            meaningful experience.
+
+            Feel free to customize it according to your website's specific goals and tone.
+        </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.to("#nav", {
+            duration: 3,
+            backgroundColor: "#bf7aff",
+            yoyo: true,
+            repeat: -1
+        });
+
+
+        gsap.from("#nav ul li, #nav div", {
+            duration: 1,
+            y: -100,
+            stagger: 0.5,
+            opacity: 0
+        });
+    </script>
+</body>
+
+</html>

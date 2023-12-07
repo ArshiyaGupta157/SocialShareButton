@@ -33,3 +33,18 @@ function toggleDark() {
     heading.classList.add('darkMode-header-h1');
     para.style.color = "white"
 }
+
+gsap.to("#nav", {
+    duration: 3,
+    backgroundColor: "#bf7aff",
+    yoyo: true,
+    repeat: -1
+  });
+
+
+  gsap.from("#nav ul li, #nav div", {
+    duration: 1,
+    y: -100,
+    stagger: 0.5,
+    opacity: 0
+  });
