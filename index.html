@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
-    <!-------------------------------------------------------------------------------------------------------------->
     <!---------------------------------- Font Awesome -------------------------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- -------------------------------------------------------------------------------------------------------- -->
@@ -25,6 +24,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            overflow: hidden;
         }
 
         .overlay {
@@ -49,7 +49,7 @@
         .article h1 {
             font-family: 'Young Serif', serif;
             font-size: 24px;
-          
+
         }
 
         .article p {
@@ -130,26 +130,50 @@
         .header div {
             font-size: large;
         }
-        .header div button{
+
+        .header div button {
             padding: 5px;
         }
-        .darkMode{
+
+        .darkMode {
             background-color: #333;
         }
-        .darkMode-header{
+
+        .darkMode-header {
             color: white;
         }
-        .darkMode-header-h1{
+
+        .darkMode-header-h1 {
             color: white
         }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #7ab8ff;
+            height: 10vh;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            margin-left: 10vw;
+        }
     </style>
-    <!-- STYLES END -->
 </head>
 
 <body>
-    
+    <nav id="nav">
+        <div>
+            <img src="https://www.registerforshare.org/sites/registerforshar/images/shareLogo.png" width="60vw" height="40vh">
+        </div>
+        <ul type="none">
+            <li><a href="./#">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
     <div class="overlay">
-        
+
         <div class="container">
             <div class="article">
                 <div class="header">
@@ -197,6 +221,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./myButton.js"></script>
 </body>
 
